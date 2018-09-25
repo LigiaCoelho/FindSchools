@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+        <style>
+          body {background-image: url('tela.jpg');}
+             #logo { width:300px;
+                    height:100px;
+                    position:absolute;
+                    top:10%;
+                    left:60%;
+                    margin-top:-50px;
+                    margin-left:-50px;}
+             hr {height: 1px;
+                position:absolute;
+                top:15%;
+                width: 1590px;
+                align:center;
+                color:#1e365c;}
+             h1 {font-size:40px;
+                    color:#1e365c;
+                    font-family: calibri;
+                    position:absolute;
+                    top:10%;
+                    left:40%;}
+             .form-group {
+              max-width: 330px;
+               padding: 200px;
+               margin: 0 auto;
+               }
+               select {
+               position: absolute;
+               width:300px;
+               
+               left: 2%;}
+               h3 {
+               font-size:25px;
+               color:#1e365c;
+               }
+               #responsavel{
+               position: absolute;
+               width:300px;
+               left: 100px;
+               top:20%;
+               }
+               #aluno{
+               position: absolute;
+               width:300px;
+               left: 600px;
+               top:20%;
+               }
+               #confirmar {   
+               position:absolute;
+               left:710px;
+               top:80%;}   
+                      
+              #voltar {   
+               position:absolute;
+               left:725px;
+               top:90%;}  
+        </style>
+            </head>
+            <body>
+            <h1>Cadastro</h1>
+            <div id = "logo"> <img src = "novo.png" width="70%"> </div> 
+            <hr>
+
+            <form action="inclusao.php" method="GET" class="form-group">
+
+ <div id="responsavel"><h3>Dados do Responsável</h3>
+<input type="text" name="nome_resp" class="form-control form-control-lg" placeholder="Nome">
+</br>
+<input class="form-control form-control-lg" type="text" name="cpf_resp" placeholder="CPF">
+</br>
+<input class="form-control form-control-lg" type="text" name="dn_resp" placeholder="Data de Nascimento">
+</br>
+<input class="form-control form-control-lg" type="text" name="tel_resp" placeholder="Telefone">
+</br>
+<input class="form-control form-control-lg" type="text" name="end_resp" placeholder="Endereço">
+</br>
+<input class="form-control form-control-lg" type="text" name="email_resp" placeholder="E-mail">
+</br>
+ 
+</br> </div>
+                
+<div id="aluno"><h3>Dados do Aluno</h3>
+<input  class="form-control form-control-lg" type="text" name="nome_aluno" placeholder="Nome">
+</br>
+<input  class="form-control form-control-lg" type="text" name="cpf_aluno" placeholder="CPF">
+</br>
+<input  class="form-control form-control-lg" type="text" name="dn_aluno" placeholder="Data de Nascimento">
+</br>
+<select class="form-control form-control-lg" name="grau">
+ <option value="" hidden>Grau de Parentesco</option>
+ <option name="grau" value="filho">Filho</option>
+ <option name="grau" value="sobrinho">Sobrinho</option>
+ <option name="grau" value="neto">Neto</option>
+ </select>
+</div>
+<div id="confirmar"><button type="submit" class="btn btn-lg btn-success" style="background-color: #90e265;">Confirmar</button></div>
+<div id="voltar"><button type="button" class="btn btn-lg btn-success" onclick="history.go(-1)"style="background-color: #90e265;">Voltar</button></div>
+    
+</form>
+</body>
+</html>
